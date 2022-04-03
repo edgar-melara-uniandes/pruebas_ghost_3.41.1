@@ -1,0 +1,39 @@
+Request
+
+curl "http://localhost:2368/ghost/api/v3/admin/session" ^
+  -H "Accept: text/plain, */*; q=0.01" ^
+  -H "Accept-Language: es-ES,es;q=0.9" ^
+  -H "App-Pragma: no-cache" ^
+  -H "Connection: keep-alive" ^
+  -H "Content-Type: application/json;charset=UTF-8" ^
+  -H "Cookie: ghost-admin-api-session=s^%^3A2NgTUyaK5bwiEt_DnT1AzU7wxj0Rbnyz.0tVf5C8tOvdCx9^%^2FfHuQDLZXhTYDB0Jqo0IG7Qta^%^2FTl8" ^
+  -H "Origin: http://localhost:2368" ^
+  -H "Referer: http://localhost:2368/ghost/" ^
+  -H "Sec-Fetch-Dest: empty" ^
+  -H "Sec-Fetch-Mode: cors" ^
+  -H "Sec-Fetch-Site: same-origin" ^
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" ^
+  -H "X-Ghost-Version: 3.41" ^
+  -H "X-Requested-With: XMLHttpRequest" ^
+  -H "sec-ch-ua: ^\^" Not A;Brand^\^";v=^\^"99^\^", ^\^"Chromium^\^";v=^\^"100^\^", ^\^"Google Chrome^\^";v=^\^"100^\^"" ^
+  -H "sec-ch-ua-mobile: ?0" ^
+  -H "sec-ch-ua-platform: ^\^"Windows^\^"" ^
+  --data-raw "^{^\^"username^\^":^\^"luis.solier^@gmail.com^\^",^\^"password^\^":^\^"a^\^"^}" ^
+  --compressed
+  
+Response
+
+{
+    "errors": [
+        {
+            "message": "There is no user with that email address.",
+            "context": null,
+            "type": "NotFoundError",
+            "details": null,
+            "property": null,
+            "help": null,
+            "code": null,
+            "id": "ffc75660-b367-11ec-a954-b7f300b5e32f"
+        }
+    ]
+}
